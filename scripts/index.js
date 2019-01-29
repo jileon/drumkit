@@ -4,6 +4,7 @@ window.addEventListener('keydown', function(e) {
   if (!audio) {
     return; // if no audio file associated with key, just stop the function
   } else {
+    audio.currentTime = 0;
     return audio.play();
   }
 });
